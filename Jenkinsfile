@@ -1,5 +1,6 @@
 node {
   checkout scm
+  sh 'sleep 10'
   stage ('Build1') {
       sh 'ping -c 10 www.apple.com'
   }
